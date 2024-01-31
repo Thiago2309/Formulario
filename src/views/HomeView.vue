@@ -52,11 +52,11 @@ const Value = () => {
     return 'Formulario enviado';
   }else {
     // Si hay errores, puedes mostrarlos o hacer algo más
-    return 'Por favor, corrija los errores antes de enviar el formulario';
+    return 'Tiene errores el formulario';
   }
 }
 
-const submitForm = () => {
+const Enviar = () => {
   // Limpiar errores antes de realizar una nueva validación
   errors.value = [];
 
@@ -103,7 +103,7 @@ const submitForm = () => {
         <label for="termsAccepted">Acepto los términos  y condiciones.</label>
       </div>
 
-      <button @click="submitForm" type="submit">Enviar</button>
+      <button @click="Enviar" type="submit">Enviar</button>
     </form>
 
     <br>
